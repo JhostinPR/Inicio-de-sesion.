@@ -1,0 +1,102 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para permitir el desplazamiento */
+  color: #333;
+  padding: 20px;
+}
+
+main {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px; /* Tamaño del logo ajustado */
+  height: auto;
+}
+
+/* Estilos para el formulario de login */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 12px 25px;
+  background-color: #007bff; /* Puedes cambiar el color aquí */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Botón "Crear Usuario" en la esquina inferior derecha */
+button#add-user-btn {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* A 20px del fondo */
+  right: 20px; /* A 20px del borde derecho */
+  padding: 12px 25px;
+  background-color: #28a745; /* Color distintivo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  z-index: 10; /* Asegura que el botón esté encima de otros elementos */
+}
+
+button#add-user-btn:hover {
+  background-color: #218838;
+}
+
+button#add-user-btn:focus {
+  outline: none;
+}
